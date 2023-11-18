@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // reverses the order of the elements in an array
+      var fruits = ["Cherry", "Orange", "Grapes", "Mango"];
+      fruits.reverse();
+      console.log(fruits);
+
+      //returns an array as a string. 'and' is separator
+
+      var fruits = ["Banana", "Orange", "Apple", "Mango"];
+      var text = fruits.join(" and ");
+      console.log(text);
+
+      //reates a new array filled with elements that pass a test provided by a function.
+
+      var age = [24, 30, 28, 35, 50];
+      var result = age.filter(check);
+
+      function check(age) {
+        return age < 50;
+      }
+
+      console.log(result);
+
+      //adds new elements to the beginning of an array.
+
+      var fruits = ["Cherry", "Orange", "Grapes", "Mango"];
+      fruits.unshift("Pineapple", "Cucumber");
+      console.log(fruits);
+
+      //returns selected elements in an array, as a new array. start and end
+
+      var fruits = ["Cherry", "Orange", "Grapes", "Mango"];
+      var bowl = fruits.slice(1, 3);
+      console.log(bowl);
+
+      var fruits = ["Cherry", "Orange", "Grapes", "Mango"];
+      fruits.push("kiwi");
+      console.log(fruits);
+    </script>
+  </body>
+</html>
