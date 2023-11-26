@@ -7,7 +7,7 @@
   </head>
   <body>
     <script>
-      //hour
+      //Hour
       var hour = 17;
       if (hour >= 0 && hour <= 6) {
         txt = " night";
@@ -24,7 +24,7 @@
       }
       console.log(txt);
 
-      //age
+      //Age
       var age = 25;
       if (age >= 5 && age < 15) {
         txt = "kid";
@@ -38,6 +38,34 @@
         txt = "old";
       } else {
         txt = "***";
+      }
+      console.log(txt);
+
+      //Price
+      var price = 35;
+      if (price >= 800) {
+        txt = "very expensive";
+      } else if (price < 800 && price >= 500) {
+        txt = "expensive";
+      } else if (price < 500 && price <= 300) {
+        txt = "reasonable price";
+      } else if (price < 300 && price >= 150) {
+        txt = "cheap";
+      } else if (price < 150) {
+        txt = "off";
+      } else {
+        txt = "***";
+      }
+      console.log(txt);
+
+      //pass
+      var pass = 1377;
+      if (pass == 1379) {
+        txt = "Fafa";
+      } else if (pass == 1377) {
+        txt = "Nikoo";
+      } else {
+        txt = "doesn't exist";
       }
       console.log(txt);
     </script>
