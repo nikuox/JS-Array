@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var std1 = {
+        fName: "Nikoo",
+        lName: "Samadi",
+        age: 24,
+        email: "nikoosamadi@yahoomail",
+      };
+      console.log(std1);
+      console.log(std1.age);
+      console.log(std1["email"]);
+      console.log(typeof std1);
+
+      //
+
+      var lName = null;
+      console.log("last name: " + lName);
+      console.log(typeof lName);
+      lName = "Samadi";
+      console.log("last name: " + lName);
+      console.log(typeof lName);
+
+      //
+      var x = 6;
+      var y = 8;
+      console.log("x: " + x);
+      console.log("y: " + y);
+      //
+      var x = 4,
+        y = 3;
+      console.log("x: " + x);
+      console.log("y: " + y);
+
+      //2D Array
+
+      var groups = [
+        ["Nikoo", "Fafa", "Sahel"],
+        ["Sara", "Fatemeh", "Sahar"],
+      ];
+      console.log(groups);
+      groups[1][0] = "Raha";
+      console.log(groups);
+      console.log(groups[1][1]);
+
+      //
+    </script>
+  </body>
+</html>
